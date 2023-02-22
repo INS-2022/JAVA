@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="deptBean" class="vesit.prathamesh.student.prac2e1.Department">
+        <property name="departmentName" value="MCA"/>
+        <property name="departmentId" value="1"/>
+        <property name="major" value="Computer"/>
+    </bean>
+    <bean id ="studentBean" class="vesit.prathamesh.student.prac2e1.Student">
+        <property name="name" value="Prathamesh Ingale"/>
+        <property name="department" ref="deptBean"/>
+    </bean>
+</beans>
